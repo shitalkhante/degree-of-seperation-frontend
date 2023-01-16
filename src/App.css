@@ -1,38 +1,116 @@
 .App {
   text-align: center;
+  background-color: gray;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#header {
+  background-color: rgb(254, 191, 103);
+  padding: 40px 0;
+  font-size: 30pt;
+  text-transform: capitalize;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.options {
+  margin-block: 2px;
+  text-transform: capitalize;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sub_heading {
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-block: 5px;
+}
+
+.insert {
+  margin: 0 auto;
+  width: max-content;
   display: flex;
+  padding: 10px;
   flex-direction: column;
+  font-size: 20px;
+  gap: 5px;
+}
+
+.column {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
   align-items: center;
+}
+
+h4 {
+  margin-block: 2px;
+  text-align: left;
+}
+
+#select {
+  width: 100%;
+  padding: 5px;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+input {
+  font-size: 20px;
+  width: 100%;
+  line-height: 27px;
+}
+
+.find_friends {
+  width: 100%;
+  position: relative;
+  margin: 0px auto;
+}
+
+.hidden_select {
+  width: 100%;
+  position: absolute;
+  background-color: white;
+}
+
+.btn {
+  font-size: 20px;
+  background-color: bisque;
+  padding: 10px 10px;
+}
+
+#list_relative {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.show_rel {
+  background-color: #f9e0be;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.all_people{
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  padding: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 18px;
+}
+#selected_friend {
+  width: 200px;
+  height: 50px;
+  background-color: beige;
+  border: 1px solid brown;
+  margin: 0 auto;
+  display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.take_input {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 7px;
+  margin: 0 auto;
+  font-size: 18px;
 }
